@@ -1,0 +1,70 @@
+import { motion } from "framer-motion";
+import { Clock } from "lucide-react";
+
+const schedule = [
+  { time: "09:30", title: "Accueil et ouverture", speaker: "Comité d'organisation" },
+  { time: "10:00", title: "IA et imagerie médicale", speaker: "Session plénière" },
+  { time: "11:00", title: "NLP clinique et gestion du dossier patient", speaker: "Session plénière" },
+  { time: "12:00", title: "Qualité, sécurité, validation, biais et robustesse", speaker: "Table ronde" },
+  { time: "13:00", title: "Pause déjeuner", speaker: "" },
+  { time: "14:00", title: "Gouvernance, confidentialité et conformité", speaker: "Session thématique" },
+  { time: "15:00", title: "Déploiement responsable des modèles IA", speaker: "Session thématique" },
+  { time: "15:30", title: "Optimisation des opérations hospitalières", speaker: "Cas d'usage" },
+  { time: "16:00", title: "Clôture", speaker: "" },
+];
+
+const AgendaSection = () => {
+  return (
+    <section id="agenda" className="py-24 bg-background">
+      <div className="container mx-auto px-4">
+        <motion.div
+          className="text-center max-w-3xl mx-auto mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <span className="text-accent font-semibold text-sm uppercase tracking-wider">
+            Planning
+          </span>
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-3 mb-6">
+            Programme de la{" "}
+            <span className="text-gradient-ocean">journée</span>
+          </h2>
+          <p className="text-muted-foreground text-lg">
+            27 mars, de 9h00 à 16h00 - EMSI Tanger.
+          </p>
+        </motion.div>
+
+        <motion.div
+          className="max-w-4xl mx-auto bg-card border border-border rounded-xl divide-y divide-border"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          {schedule.map((item, idx) => (
+            <div
+              key={idx}
+              className="flex gap-4 px-6 py-4 hover:bg-muted/50 transition-colors"
+            >
+              <div className="flex items-center gap-2 text-primary font-mono text-sm min-w-[82px]">
+                <Clock className="w-3.5 h-3.5" />
+                {item.time}
+              </div>
+              <div>
+                <p className="font-medium text-foreground text-sm">{item.title}</p>
+                {item.speaker && (
+                  <p className="text-muted-foreground text-xs mt-0.5">{item.speaker}</p>
+                )}
+              </div>
+            </div>
+          ))}
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default AgendaSection;
+
