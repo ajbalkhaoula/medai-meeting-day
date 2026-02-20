@@ -6,9 +6,10 @@ const partners = [
   { name: "Équipe Ingénierie des Données et des Systèmes", logo: "/partners/IDS.png" },
   { name: "École Nationale des Sciences Appliquées de Tanger", logo: "/partners/ENSAT.png" },
   { name: "Université Abdelmalek Essaâdi", logo: "/partners/UAE.png" },
+  { name: "Université Hassan II de Casablanca", logo: "/partners/UH2C.png" },
   { name: "Faculté de Médecine et de Pharmacie de Casablanca", logo: "/partners/FMPC.png" },
   { name: "Faculté des Sciences Aïn Chock", logo: "/partners/FSAC.jpg" },
-  { name: "Université Hassan II de Casablanca", logo: "/partners/UH2C.png" },
+  
 ];
 
 const SponsorsSection = () => {

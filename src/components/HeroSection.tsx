@@ -3,8 +3,24 @@ import { CalendarDays, Clock3, MapPin } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
+  const scrollToSection = (href: string) => {
+    const targetId = href.replace("#", "");
+    const target = document.getElementById(targetId);
+    if (!target) return;
+
+    const isDesktop = window.innerWidth >= 768;
+    const navHeight = isDesktop ? 80 : 64;
+    const sectionOffset = isDesktop ? 72 : 56;
+    const top = window.scrollY + target.getBoundingClientRect().top - navHeight + sectionOffset;
+
+    window.scrollTo({
+      top: Math.max(0, top),
+      behavior: "smooth",
+    });
+  };
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative flex items-center justify-center overflow-hidden pt-20 md:pt-0 min-h-[calc(100svh-4rem)] md:min-h-screen">
       <div className="absolute inset-0">
         <img
           src={heroBg}
@@ -69,7 +85,7 @@ const HeroSection = () => {
         </motion.p>
 
         <motion.div
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10"
+          className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-10"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.45 }}
@@ -91,15 +107,29 @@ const HeroSection = () => {
         </motion.div>
 
         <motion.div
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="grid grid-cols-2 sm:flex items-center justify-center gap-3 sm:gap-4 w-full max-w-md mx-auto"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <a href="#register" className="btn-accent px-8 py-3.5 text-base">
+          <a
+            href="#register"
+            className="btn-accent px-4 sm:px-8 py-3 sm:py-3.5 text-sm sm:text-base text-center"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("#register");
+            }}
+          >
             S'inscrire
           </a>
-          <a href="#about" className="btn-outline-hero px-8 py-3.5 text-base">
+          <a
+            href="#agenda"
+            className="btn-outline-hero px-4 sm:px-8 py-3 sm:py-3.5 text-sm sm:text-base text-center"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("#agenda");
+            }}
+          >
             Voir le programme
           </a>
         </motion.div>

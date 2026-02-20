@@ -33,25 +33,30 @@ const CommitteeSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
           {committee.map((member, index) => (
             <motion.div
               key={member.name}
-              className="bg-card rounded-xl overflow-hidden border border-border card-hover"
+              className="flex flex-col items-center text-center group"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.45, delay: index * 0.05 }}
             >
-              <img
-                src={member.image}
-                alt={member.name}
-                className="w-full h-56 object-cover"
-                loading="lazy"
-              />
-              <div className="p-4">
-                <h3 className="font-semibold text-foreground text-sm">{member.name}</h3>
+              {/* Photo circulaire compacte */}
+              <div className="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-2 border-white shadow-md group-hover:border-sky-400 group-hover:shadow-sky-100 transition-all duration-300 mb-3">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-full h-full object-cover object-top"
+                  loading="lazy"
+                />
               </div>
+
+              {/* Nom */}
+              <h3 className="text-sm font-semibold text-foreground leading-tight">
+                {member.name}
+              </h3>
             </motion.div>
           ))}
         </div>

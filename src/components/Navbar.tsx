@@ -19,9 +19,9 @@ const Navbar = () => {
     const target = document.getElementById(targetId);
     if (!target) return;
 
-    const nav = document.querySelector("nav");
-    const navHeight = nav ? nav.getBoundingClientRect().height : 92;
-    const sectionOffset = 64;
+    const isDesktop = window.innerWidth >= 768;
+    const navHeight = isDesktop ? 80 : 64;
+    const sectionOffset = isDesktop ? 72 : 56;
     const top = window.scrollY + target.getBoundingClientRect().top - navHeight + sectionOffset;
 
     window.scrollTo({
@@ -32,22 +32,22 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-50/95 backdrop-blur-md shadow-sm border-b border-slate-200/70 transition-all duration-300">
-      <div className="container mx-auto flex items-center justify-between py-3 px-4 lg:px-8">
+      <div className="container mx-auto flex h-16 md:h-20 items-center justify-between px-4 lg:px-8">
         <a href="#" className="inline-flex items-center">
           <img
             src="/medai-logo.png"
             alt="MedAI Meeting Day"
-            className="h-16 w-auto md:h-20 object-contain"
+            className="h-10 sm:h-12 md:h-14 lg:h-16 xl:h-20 w-auto object-contain"
             loading="eager"
           />
         </a>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-4 lg:gap-6 xl:gap-8">
           {navItems.map((item) => (
             <a
               key={item.label}
               href={item.href}
-              className="text-sm font-medium text-slate-700 transition-colors hover:text-accent"
+              className="text-sm lg:text-base font-medium text-slate-700 transition-colors hover:text-accent whitespace-nowrap shrink-0"
               onClick={(e) => {
                 e.preventDefault();
                 scrollToSection(item.href);
@@ -56,13 +56,17 @@ const Navbar = () => {
               {item.label}
             </a>
           ))}
-          <a href="#register" className="btn-accent px-5 py-2.5 text-sm inline-block">
+          <a
+            href="#register"
+            className="btn-accent px-4 lg:px-5 py-2.5 text-sm inline-block whitespace-nowrap shrink-0"
+          >
             S'inscrire
           </a>
         </div>
 
         <button
-          className="md:hidden"
+          type="button"
+          className="md:hidden p-2 -mr-2"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Ouvrir ou fermer le menu"
         >
@@ -87,7 +91,7 @@ const Navbar = () => {
                   onClick={(e) => {
                     e.preventDefault();
                     setMobileOpen(false);
-                    scrollToSection(item.href);
+                    setTimeout(() => scrollToSection(item.href), 0);
                   }}
                 >
                   {item.label}
@@ -96,7 +100,11 @@ const Navbar = () => {
               <a
                 href="#register"
                 className="btn-accent px-5 py-2.5 text-sm text-center mt-2"
-                onClick={() => setMobileOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setMobileOpen(false);
+                  setTimeout(() => scrollToSection("#register"), 0);
+                }}
               >
                 S'inscrire
               </a>

@@ -62,25 +62,25 @@ const AboutSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
           {themes.map((theme, index) => (
             <motion.div
               key={theme.title}
-              className="bg-card rounded-xl p-6 border border-border card-hover"
+              className="bg-card rounded-xl p-4 md:p-5 border border-border card-hover"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.08 }}
             >
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                  <theme.icon className="w-6 h-6 text-primary" />
+              <div className="flex items-start gap-3 md:gap-4">
+                <div className="w-10 h-10 md:w-11 md:h-11 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                  <theme.icon className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-display text-lg font-semibold text-foreground mb-2">
+                  <h3 className="font-display text-base md:text-lg font-semibold text-foreground mb-1.5 md:mb-2">
                     {theme.title}
                   </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
+                  <p className="text-muted-foreground text-sm leading-7 md:leading-relaxed">
                     {theme.description}
                   </p>
                 </div>
@@ -94,4 +94,3 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
-
