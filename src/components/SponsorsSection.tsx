@@ -35,19 +35,24 @@ const SponsorsSection = () => {
           {partners.map((partner, index) => (
             <motion.div
               key={partner.name}
-              className="bg-white border border-border rounded-xl p-5 flex flex-col items-center justify-center card-hover min-h-[150px]"
+              className="group bg-white border border-border rounded-xl p-5 flex flex-col items-center justify-center card-hover min-h-[150px]"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.45, delay: index * 0.06 }}
             >
-              <img
-                src={partner.logo}
-                alt={partner.name}
-                className="h-16 w-auto object-contain mb-3"
-                loading="lazy"
-              />
-              <p className="text-xs text-center text-muted-foreground font-medium">
+              <div className="relative w-full max-w-[220px] rounded-lg overflow-hidden">
+                <img
+                  src={partner.logo}
+                  alt={partner.name}
+                  className="h-16 w-full object-contain"
+                  loading="lazy"
+                />
+                <div className="hidden md:flex absolute inset-0 items-center justify-center bg-primary/80 text-white text-xs text-center font-medium px-3 opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+                  {partner.name}
+                </div>
+              </div>
+              <p className="mt-3 text-xs text-center text-muted-foreground font-medium md:hidden">
                 {partner.name}
               </p>
             </motion.div>
@@ -59,4 +64,3 @@ const SponsorsSection = () => {
 };
 
 export default SponsorsSection;
-

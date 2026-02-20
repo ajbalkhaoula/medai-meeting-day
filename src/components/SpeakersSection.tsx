@@ -15,9 +15,15 @@ const speakers = [
   },
   {
     name: "Pr Samy Housbane",
-    role: "Professeur agrégé en Informatique Médicale à la Faculté de Médecine et de Pharmacie de Casablanca",
+    role: "Professeur de l'Enseignement Supérieur en Médecine Informatique à la Faculté de Médecine et de Pharmacie de Casablanca",
     image: "/speakers/Housbane.png",
     bio: "Expert en systèmes d'information de santé et en intelligence artificielle, il dirige le Laboratoire d'Informatique Médicale à la Faculté de Médecine et de Pharmacie de Casablanca. Ses travaux se concentrent sur l'intégration des nouvelles technologies dans le parcours de soin et l'analyse de données massives pour la santé publique.",
+  },
+  {
+    name: "Pr Adil Najdi",
+    role: "Vice-Doyen chargé de la Recherche Scientifique et de la Coopération à la Faculté de Médecine et de Pharmacie de Tanger",
+    image: "/speakers/najdi.png",
+    bio: "Spécialiste en épidémiologie et santé publique. Ses travaux portent sur l'application du machine learning et des modèles prédictifs à l'analyse des données de santé, visant l'optimisation du diagnostic clinique et de la surveillance épidémiologique au sein du Laboratoire de Santé Systémique.",
   },
   {
     name: "Pr Hassan Badir",
@@ -75,7 +81,7 @@ const SpeakersSection = () => {
                   <p className="text-orange-500 text-sm font-semibold mt-1 leading-snug">
                     {speaker.role}
                   </p>
-                  <p className="text-muted-foreground text-sm mt-3 leading-relaxed text-justify sm:text-left">
+                  <p className="text-muted-foreground text-sm mt-3 leading-relaxed text-justify">
                     {speaker.bio}
                   </p>
                 </div>
