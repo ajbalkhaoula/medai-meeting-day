@@ -3,15 +3,15 @@ import { motion } from "framer-motion";
 const speakers = [
   {
     name: "Pr Rachida Fissoune",
-    role: "Professeure de l'Enseignement Supérieur à l'ENSA de Tanger",
+    role: "Enseignante-chercheure à l'ENSA de Tanger",
     image: "/speakers/FISSOUNE.png",
-    bio: "Spécialiste en génie biomédical et en intelligence artificielle, elle est membre de l'équipe de recherche en Ingénierie des Données et des Systèmes (IDS). Ses travaux portent sur le deep learning appliqué à l'imagerie médicale et à la bioinformatique, avec un focus particulier sur l'analyse de données complexes pour le diagnostic et le suivi médical.",
+    bio: "Spécialiste en sciences des données et modélisation des systèmes complexes, elle est membre de l'équipe IDS et ex-coordinatrice du Master Bioinformatique. Son profil multidisciplinaire conjugue informatique et sciences biomédicales. Ses travaux portent sur l'exploitation de l'IA et l'analyse avancée de données, avec un intérêt majeur pour leur valorisation dans l'imagerie médicale, le diagnostic et le suivi médical.",
   },
   {
     name: "Pr Khadija Achtaich",
     role: "Professeure de l'Enseignement Supérieur à la Faculté des Sciences Ben M'Sik à Casablanca",
     image: "/speakers/ACHTAICH.png",
-    bio: "Chercheuse spécialisée dans l'application de l'intelligence artificielle aux domaines de l'éducation et de la santé. Elle se consacre à l'innovation technologique et à la vulgarisation scientifique pour l'amélioration de la littératie en santé.",
+    bio: "Chercheuse spécialisée dans l'application de l'IA aux domaines de l'éducation et de la santé. Ses travaux portent sur le développement de solutions intelligentes pour le diagnostic médical et l'optimisation des parcours de soins. Elle se consacre activement à l'innovation technologique et à la vulgarisation scientifique pour l'amélioration de la littératie en santé et l'inclusion numérique.",
   },
   {
     name: "Pr Samy Housbane",

@@ -34,6 +34,9 @@ const AgendaSection = () => {
           <p className="text-muted-foreground text-lg">
             27 mars, de 9h00 à 16h00 - EMSI Tanger.
           </p>
+          <p className="mt-3 text-sm text-muted-foreground/90">
+            Ce programme est temporaire et peut être sujet à des changements.
+          </p>
         </motion.div>
 
         <motion.div
@@ -67,4 +70,3 @@ const AgendaSection = () => {
 };
 
 export default AgendaSection;
-
