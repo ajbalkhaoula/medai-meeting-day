@@ -2,11 +2,11 @@
 import { Clock } from "lucide-react";
 
 const schedule = [
-  { time: "09:30", title: "Accueil des participants & Mots d'ouverture", speaker: "" },
-  { time: "10:00", title: "Conférences Plénières", speaker: "" },
-  { time: "11:30", title: "Pause café", speaker: "" },
-  //{ time: "12:00", title: "Qualité, sécurité, validation, biais et robustesse", speaker: "Table ronde" },
-  { time: "13:00", title: "Table Ronde : Regards Croisés", speaker: "" },
+  { time: "09:00", title: "Accueil des participants & Mots d'ouverture", speaker: "" },
+  { time: "09:30", title: "Conférences Plénières", speaker: "" },
+  { time: "11:00", title: "Pause café", speaker: "" },
+  { time: "11:30", title: "Conférences Plénières", speaker: "" },
+  { time: "12:30", title: "Table Ronde : Regards Croisés", speaker: "" },
   { time: "14:00", title: "Pause Déjeuner" },
   { time: "15:00", title: "Sessions de Communications", speaker: "" },
   //{ time: "15:30", title: "Optimisation des opérations hospitalières", speaker: "Cas d'usage" },

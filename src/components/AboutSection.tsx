@@ -19,7 +19,7 @@ const themes = [
   },
   {
     icon: Lock,
-    title: "Gouvernance, privacy et compliance",
+    title: "Gouvernance,confidentialité et conformité ",
     description: "Conformité, confidentialité et bonnes pratiques réglementaires.",
   },
   {
