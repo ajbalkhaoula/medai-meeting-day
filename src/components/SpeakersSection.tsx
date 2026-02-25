@@ -11,7 +11,7 @@ const speakers = [
     name: "Pr Khadija Achtaich",
     role: "Professeure de l'Enseignement Supérieur à la Faculté des Sciences Ben M'Sik à Casablanca",
     image: "/speakers/ACHTAICH.png",
-    bio: "Chercheuse spécialisée dans l'application de l'IA aux domaines de l'éducation et de la santé. Ses travaux portent sur le développement de solutions intelligentes pour le diagnostic médical et l'optimisation des parcours de soins. Elle se consacre activement à l'innovation technologique et à la vulgarisation scientifique pour l'amélioration de la littératie en santé et l'inclusion numérique.",
+    bio: "Chercheuse spécialisée dans l'application de l'IA aux domaines de la préservation du patrimoine et de la santé. Ses travaux portent sur le développement de solutions intelligentes pour le diagnostic médical et l'optimisation des parcours de soins. Elle se consacre activement à l'innovation technologique et à la vulgarisation scientifique pour l'amélioration de la littératie en santé et l'inclusion numérique.",
   },
   {
     name: "Pr Samy Housbane",
@@ -25,12 +25,12 @@ const speakers = [
     image: "/speakers/najdi.png",
     bio: "Spécialiste en épidémiologie et santé publique. Ses travaux portent sur l'application du machine learning et des modèles prédictifs à l'analyse des données de santé, visant l'optimisation du diagnostic clinique et de la surveillance épidémiologique au sein du Laboratoire de Santé Systémique.",
   },
-  {
+  /*{
     name: "Pr Hassan Badir",
     role: "Professeur de l'Enseignement Supérieur à l'ENSA de Tanger",
     image: "/speakers/PR%20BADIR.png",
     bio: "Expert reconnu en big data, machine learning et bases de données, il dirige l'équipe de recherche en Ingénierie des Données et des Systèmes (IDS). Ses travaux portent sur l'extraction de connaissances et l'intelligence distribuée, avec des applications concrètes dans l'optimisation des données de santé complexes.",
-  },
+  },*/
 ];
 
 const SpeakersSection = () => {

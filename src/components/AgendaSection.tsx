@@ -1,16 +1,16 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { Clock } from "lucide-react";
 
 const schedule = [
-  { time: "09:30", title: "Accueil et ouverture", speaker: "Comité d'organisation" },
-  { time: "10:00", title: "IA et imagerie médicale", speaker: "Session plénière" },
-  { time: "11:00", title: "NLP clinique et gestion du dossier patient", speaker: "Session plénière" },
-  { time: "12:00", title: "Qualité, sécurité, validation, biais et robustesse", speaker: "Table ronde" },
-  { time: "13:00", title: "Pause déjeuner", speaker: "" },
-  { time: "14:00", title: "Gouvernance, confidentialité et conformité", speaker: "Session thématique" },
-  { time: "15:00", title: "Déploiement responsable des modèles IA", speaker: "Session thématique" },
-  { time: "15:30", title: "Optimisation des opérations hospitalières", speaker: "Cas d'usage" },
-  { time: "16:00", title: "Clôture", speaker: "" },
+  { time: "09:30", title: "Accueil des participants & Mots d'ouverture", speaker: "" },
+  { time: "10:00", title: "Conférences Plénières", speaker: "" },
+  { time: "11:30", title: "Pause café", speaker: "" },
+  //{ time: "12:00", title: "Qualité, sécurité, validation, biais et robustesse", speaker: "Table ronde" },
+  { time: "13:00", title: "Table Ronde : Regards Croisés", speaker: "" },
+  { time: "14:00", title: "Pause Déjeuner" },
+  { time: "15:00", title: "Sessions de Communications", speaker: "" },
+  //{ time: "15:30", title: "Optimisation des opérations hospitalières", speaker: "Cas d'usage" },
+  { time: "16:00", title: "Synthèse & Clôture", speaker: "" },
 ];
 
 const AgendaSection = () => {
