@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 
 const committee = [
+  { name: "Pr Hassan Badir", image: "/committee/PR BADIR.png" },
+  { name: "Pr Rachida Fissoune", image: "/committee/FISSOUNE.png" },
   { name: "Khaoula Ajbal", image: "/committee/AJBAL%20KHAOULA.png" },
   { name: "Wafae El Kayssouni", image: "/committee/KAYSSOUNI.png" },
   { name: "Abderrachid Errezgouny", image: "/committee/ERREZGOUNY.png" },
