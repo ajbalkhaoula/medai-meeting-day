@@ -17,7 +17,7 @@ const speakers = [
     name: "Pr Samy Housbane",
     role: "Professeur de l'Enseignement Supérieur en Médecine Informatique à la Faculté de Médecine et de Pharmacie de Casablanca",
     image: "/speakers/Housbane.png",
-    bio: "Expert en systèmes d'information de santé et en intelligence artificielle, il dirige le Laboratoire d'Informatique Médicale à la Faculté de Médecine et de Pharmacie de Casablanca. Ses travaux se concentrent sur l'intégration des nouvelles technologies dans le parcours de soin et l'analyse de données massives pour la santé publique.",
+    bio: "Expert en systèmes d'information de santé et en intelligence artificielle, il est directeur adjoint du Laboratoire de Recherche en Innovation Thérapeutique et d'Intelligence Artificielle en Santé à la Faculté de Médecine et de Pharmacie de Casablanca. Ses travaux se concentrent sur l'intégration des nouvelles technologies dans le parcours de soin et l'analyse de données massives pour la santé publique.",
   },
   {
     name: "Pr Adil Najdi",
