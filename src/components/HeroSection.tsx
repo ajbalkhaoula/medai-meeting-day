@@ -20,7 +20,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative flex items-center justify-center overflow-hidden pt-20 md:pt-0 min-h-[calc(100svh-4rem)] md:min-h-screen">
+    <section className="relative flex items-center justify-center overflow-hidden pt-20 pb-10 md:pb-0 md:pt-0 min-h-[calc(100svh-4rem)] md:min-h-screen">
       <div className="absolute inset-0">
         <img
           src={heroBg}
@@ -73,7 +73,7 @@ const HeroSection = () => {
         </motion.p>
 
         <motion.p
-          className="text-lg md:text-xl max-w-3xl mx-auto mb-8"
+          className="text-lg md:text-xl max-w-3xl mx-auto mb-6"
           style={{ color: "hsl(205 30% 85%)" }}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -85,7 +85,7 @@ const HeroSection = () => {
         </motion.p>
 
         <motion.div
-          className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-10"
+          className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-4 sm:mb-6"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.45 }}
@@ -107,7 +107,28 @@ const HeroSection = () => {
         </motion.div>
 
         <motion.div
-          className="grid grid-cols-2 sm:flex items-center justify-center gap-3 sm:gap-4 w-full max-w-md mx-auto"
+          className="inline-flex flex-col items-center gap-2 px-4 py-2 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md w-full max-w-[320px] sm:max-w-fit mx-auto mb-6 shadow-2xl"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.52 }}
+        >
+          {/* Badge Date */}
+          <div className="flex flex-row items-center gap-2 bg-orange-500/20 text-white px-3 py-1 rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-wider border border-orange-500/30 leading-tight whitespace-nowrap">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
+            </span>
+            Deadline : <span className="text-orange-400">21 Mars 2026</span>
+          </div>
+
+          {/* Texte d'accompagnement */}
+          <p className="text-[10px] md:text-xs text-slate-200 font-medium text-center leading-snug">
+            Inscriptions et soumissions ouvertes via le bouton <span className="text-white font-bold underline decoration-orange-500/50 underline-offset-4">S'inscrire</span>
+          </p>
+        </motion.div>
+
+        <motion.div
+          className="grid grid-cols-2 sm:flex items-center justify-center gap-3 sm:gap-4 w-full max-w-md mx-auto mb-4 sm:mb-0"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}

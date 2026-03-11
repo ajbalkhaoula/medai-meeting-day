@@ -20,10 +20,10 @@ const speakers = [
     bio: "Expert en systèmes d'information de santé et en intelligence artificielle, il est directeur adjoint du Laboratoire de Recherche en Innovation Thérapeutique et d'Intelligence Artificielle en Santé à la Faculté de Médecine et de Pharmacie de Casablanca. Ses travaux se concentrent sur l'intégration des nouvelles technologies dans le parcours de soin et l'analyse de données massives pour la santé publique.",
   },
   {
-    name: "Pr Adil Najdi",
-    role: "Vice-Doyen chargé de la Recherche Scientifique et de la Coopération à la Faculté de Médecine et de Pharmacie de Tanger",
-    image: "/speakers/najdi.png",
-    bio: "Spécialiste en épidémiologie et santé publique. Ses travaux portent sur l'application du machine learning et des modèles prédictifs à l'analyse des données de santé, visant l'optimisation du diagnostic clinique et de la surveillance épidémiologique au sein du Laboratoire de Santé Systémique.",
+    name: "Pr Hind Bourkhime",
+    role: "Professeure d’informatique médicale à la Faculté de Médecine et de Pharmacie de Tanger et médecin spécialiste intégrée au G.S.T. Tanger–Tétouan–Al Hoceïma. ",
+    image: "/speakers/HIND.jpeg",
+    bio: "Chercheuse en santé numérique et en intelligence artificielle appliquées aux systèmes de santé, ses travaux portent sur l’analyse des données de santé par machine learning, l’évaluation des systèmes d’information hospitaliers et l’amélioration de la qualité des données. Ses recherches visent à optimiser l’utilisation des technologies numériques et des données de santé afin de soutenir la transformation des systèmes de santé.",
   },
   /*{
     name: "Pr Hassan Badir",

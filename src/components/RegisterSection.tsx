@@ -22,6 +22,9 @@ const RegisterSection = () => {
             Rejoignez MedAI Meeting Day le 27 mars à EMSI Tanger.
             <br className="hidden md:block" />
             Utilisez le formulaire ci-dessous pour <strong>confirmer votre présence</strong> ou <strong>soumettre vos travaux</strong> de recherche.
+            <br className="block" />
+            <span className="text-white font-semibold">Date limite de soumission : </span>
+            <span className="text-orange-400 font-semibold">21 Mars 2026</span>.
           </p>
 
           <a
