@@ -2,14 +2,33 @@
 import { Clock } from "lucide-react";
 
 const schedule = [
-  { time: "09:00", title: "Accueil des participants & Mots d'ouverture", speaker: "" },
-  { time: "09:30", title: "Conférences Plénières", speaker: "" },
-  { time: "11:00", title: "Pause café", speaker: "" },
-  { time: "11:30", title: "Conférences Plénières", speaker: "" },
-  { time: "12:30", title: "Table Ronde : Regards Croisés", speaker: "" },
-  { time: "14:00", title: "Pause Déjeuner" },
+  { time: "09:00", title: "Accueil et Mots d'ouvertures", speaker: "" },
+  {
+    time: "09:30",
+    title: "Pr. Rachida Fissoune",
+    speaker: "L'Intelligence Artificielle au Service de la Transformation du Diagnostic et des Soins",
+  },
+  {
+    time: "10:00",
+    title: "Pr. Samy Housbane",
+    speaker:
+      "Intégration de l'IA dans la pratique clinique, enjeux et défis pour les professionnels de santé",
+  },
+  { time: "10:30", title: "Pause Café", speaker: "" },
+  {
+    time: "11:00",
+    title: "Pr. Khadija Achtaich",
+    speaker: "Souveraineté digitale et IA médicale : écosystème, data et gouvernance",
+  },
+  {
+    time: "11:30",
+    title: "Pr. Hind Bourkhime",
+    speaker:
+      "De l'algorithme au lit du patient : garantir la robustesse et la sécurité clinique des IA en santé",
+  },
+  { time: "12:00", title: "Table Ronde", speaker: "" },
+  { time: "14:00", title: "Pause déjeuner" },
   { time: "15:00", title: "Sessions de Communications", speaker: "" },
-  //{ time: "15:30", title: "Optimisation des opérations hospitalières", speaker: "Cas d'usage" },
   { time: "16:00", title: "Synthèse & Clôture", speaker: "" },
 ];
 
